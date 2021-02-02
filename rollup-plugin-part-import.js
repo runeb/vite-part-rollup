@@ -8,10 +8,9 @@ export default function partImport() {
       if (id.match(/^part:/)) {
         const part = sanity.parts.find((p) => p.implements === id);
         if (part) {
-          const resolution = await this.resolve(part.path, undefined, {
+          return this.resolve(part.path, undefined, {
             skipSelf: true,
           });
-          return resolution;
         }
       }
       return null;
