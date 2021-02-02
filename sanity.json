@@ -1,0 +1,8 @@
+{
+  "parts": [
+    {
+      "implements": "part:base/greeting",
+      "path": "./src/greeter.ts"
+    }
+  ]
+}
